@@ -1,4 +1,1 @@
-import { render, screen } from "@testing-library/react";
-import App from "./App";
-
-test("Renders without crashing", () => {});
+it("Renders without crashing", () => {});
