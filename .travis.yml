@@ -12,3 +12,11 @@ after_success:
   - docker build -t hadeces/multi-nginx ./nginx
   - docker build -t hadeces/multi-server ./server
   - docker build -t hadeces/multi-worker ./worker
+
+  # Log in to the docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+
+  - docker push hadeces/multi-client
+  - docker push hadeces/multi-nginx
+  - docker push hadeces/multi-server
+  - docker push hadeces/multi-worker
