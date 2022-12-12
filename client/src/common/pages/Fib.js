@@ -1,7 +1,7 @@
-const React = require("react");
-const axios = require("axios");
+import React, { Component } from "react";
+import axios from "axios";
 
-class Fib extends React.Component {
+class Fib extends Component {
   state = {
     seenIndexes: [],
     values: {},
