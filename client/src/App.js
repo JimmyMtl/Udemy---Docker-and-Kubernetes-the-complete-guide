@@ -1,7 +1,7 @@
 import './App.css';
 import Fib from "./common/pages/Fib";
 import {BrowserRouter as Router, Route, Link, Routes} from "react-router-dom";
-import logo from '../public/fibonacci.png'
+import logo from './fibonacci.png'
 import OtherPage from "./common/pages/OtherPage";
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query'
 
