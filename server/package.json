@@ -1,11 +1,12 @@
 {
   "dependencies": {
+    "body-parser": "*",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
+    "node-fetch": "^2.6.7",
     "nodemon": "^2.0.20",
     "pg": "^8.0.3",
-    "redis": "^4.5.1",
-    "cors": "^2.8.5",
-    "body-parser": "*"
+    "redis": "^4.5.1"
   },
   "scripts": {
     "start": "node index.js",
