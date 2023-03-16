@@ -21,7 +21,7 @@ services:
       - PGUSER=postgres
       # Services referenced upon
       - PGHOST=postgres
-      - PGDATABASE=fibvalues
+      - PGDATABASE=postgres
       - PGPASSWORD=postgrespassword
       - PGPORT=5432
     depends_on:
