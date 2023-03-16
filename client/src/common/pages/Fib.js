@@ -27,12 +27,12 @@ const Fib = () => {
         return seenIndexes.data
     };
 
-    const {data: indexes, status: indexesStatus, isLoading: loadingIndexes} = useQuery(['indexes'], fetchIndexes, {
+    const {data: indexes, isLoading: loadingIndexes} = useQuery(['indexes'], fetchIndexes, {
         onSuccess: (dat) => {
             console.log('fetchDat ', dat)
         }
     });
-    const {data: values, status: valuesStatus, isLoading: loadingValues} = useQuery(['values'], fetchValues);
+    const {data: values, isLoading: loadingValues} = useQuery(['values'], fetchValues);
 
     const postValues = async (index) => {
         const res = await axios.post("/api/values", {
